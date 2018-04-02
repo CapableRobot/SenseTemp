@@ -1,0 +1,21 @@
+{
+    "device": {
+        "name": "RTD-1",
+        "sensors": [
+            "Name 1",
+            "Name 2",
+            "Name 3",
+            "Name 4"
+        ],
+        "sleep": 1,
+        "scale": 100,
+        "to_int": true
+    },
+    "wifi":{
+        "name": "SSID_NAME",
+        "pass": "SSID_PASS"
+    },
+    "mqtt": {
+        "ip":"MQTT_IP"
+    }
+}
