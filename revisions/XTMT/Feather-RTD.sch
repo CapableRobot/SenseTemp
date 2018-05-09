@@ -3511,6 +3511,10 @@ LETTER landscape</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="LICENSE" value="CC BY-SA 4.0"/>
+<attribute name="REV" value="XTMT"/>
+<attribute name="TITLE" value="Feather RTD Wing"/>
+<attribute name="URL" value="https://github.com/CapableRobot/Feather-RTD"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -3551,12 +3555,7 @@ LETTER landscape</description>
 <part name="RTD1" library="osterwood" deviceset="CONN-20" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_12" device="NO_SILK" package3d_urn="urn:adsk.eagle:package:38179/1"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_16" device="1X16_NO_SILK" package3d_urn="urn:adsk.eagle:package:38249/1"/>
-<part name="FRAME1" library="CapableRobot" deviceset="LETTER_L" device="">
-<attribute name="LICENSE" value="CC BY-SA 4.0"/>
-<attribute name="REV" value="XTMT"/>
-<attribute name="TITLE" value="Feather RTD Wing"/>
-<attribute name="URL" value="https://github.com/CapableRobot/Feather-RTD"/>
-</part>
+<part name="FRAME1" library="CapableRobot" deviceset="LETTER_L" device=""/>
 <part name="FRAME2" library="CapableRobot" deviceset="LETTER_L" device=""/>
 <part name="FRAME3" library="CapableRobot" deviceset="LETTER_L" device=""/>
 <part name="R1" library="CapableRobot" deviceset="RES" device="0603" value="10k"/>
@@ -3612,12 +3611,7 @@ LETTER landscape</description>
 <instance part="J1" gate="G$1" x="48.26" y="45.72" rot="R180"/>
 <instance part="J3" gate="G$1" x="83.82" y="45.72" rot="MR0"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
-<instance part="FRAME1" gate="G$2" x="147.32" y="0">
-<attribute name="REV" x="147.32" y="0" size="1.778" layer="96" display="off"/>
-<attribute name="LICENSE" x="147.32" y="0" size="1.778" layer="96" display="off"/>
-<attribute name="TITLE" x="147.32" y="0" size="1.778" layer="96" display="off"/>
-<attribute name="URL" x="147.32" y="0" size="1.778" layer="96" display="off"/>
-</instance>
+<instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
 <instance part="GND3" gate="1" x="71.12" y="134.62"/>
 <instance part="GND1" gate="1" x="38.1" y="134.62"/>
 <instance part="GND2" gate="1" x="68.58" y="66.04" rot="R180"/>
