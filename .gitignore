@@ -1,1 +1,12 @@
 software/settings.json
+
+# Eagle Backup files
+*.s#?
+*.b#?
+*.l#?
+*.b$?
+*.s$?
+*.l$?
+
+# Eagle file locks (introduced since 7.x)
+*.lck
