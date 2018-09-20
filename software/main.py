@@ -82,7 +82,7 @@ for location in settings['device']['sensors']:
 
     sensor_info.append({
         "id"       : idx,
-        "scale"    : setting['device']['scale'],
+        "scale"    : settings['device']['scale'],
         "type"     : "temperature",
         "sensor"   : "RTD1000 -> MAX31865",
         "location" : location
@@ -98,9 +98,9 @@ while True:
     samples = []
 
     for idx, sensor in sensors:
-        value = sensor.temperature*setting['device']['scale']
+        value = sensor.temperature*settings['device']['scale']
 
-        if setting['device']['do_int']:
+        if settings['device']['to_int']:
             value = int(value)
 
         meta.append({'id':idx, 'value' : value})
