@@ -23,7 +23,7 @@ class MicroWebSocket :
     _opCloseFrame  = 0x8
     _opPingFrame   = 0x9
     _opPongFrame   = 0xA
-    
+
     _msgTypeText   = 1
     _msgTypeBin    = 2
 

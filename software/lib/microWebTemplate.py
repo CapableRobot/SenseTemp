@@ -26,7 +26,7 @@ class MicroWebTemplate :
 
 	MESSAGE_TEXT            = ''
 	MESSAGE_STYLE           = ''
-	
+
     # ============================================================================
     # ===( Constructor )==========================================================
     # ============================================================================
@@ -75,10 +75,10 @@ class MicroWebTemplate :
     # ============================================================================
     # ===( Utils  )===============================================================
     # ============================================================================
-	
+
 	def _parseCode(self, pyGlobalVars, pyLocalVars, execute) :
 		if pyGlobalVars:
-			self._pyGlobalVars.update(pyGlobalVars) 
+			self._pyGlobalVars.update(pyGlobalVars)
 		if pyLocalVars:
 			self._pyLocalVars.update(pyLocalVars)
 		self._pyLocalVars['MESSAGE_TEXT'] = MicroWebTemplate.MESSAGE_TEXT
@@ -183,7 +183,7 @@ class MicroWebTemplate :
 				if tokenContent == MicroWebTemplate.INSTRUCTION_END :
 					break
 				raise Exception( '"%s" is a bad instruction in a python bloc (line %s)'
-								 % (tokenContent, self._line) )				
+								 % (tokenContent, self._line) )
 			elif c == '\n' :
 				self._line += 1
 			if execute :
@@ -191,7 +191,7 @@ class MicroWebTemplate :
 			self._pos += 1
 		if execute :
 			lines  = pyCode.split('\n')
-			indent = '' 
+			indent = ''
 			for line in lines :
 				if len(line.strip()) > 0 :
 					for c in line :
