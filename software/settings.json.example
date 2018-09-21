@@ -7,15 +7,15 @@
             "Name 3",
             "Name 4"
         ],
-        "sleep": 1,
-        "scale": 100,
-        "to_int": true
     },
-    "wifi":{
+    "wifi-station":{
         "name": "SSID_NAME",
         "pass": "SSID_PASS"
     },
     "mqtt": {
-        "ip":"MQTT_IP"
+        "ip":"MQTT_IP",
+        "sleep": 1,
+        "scale": 100,
+        "to_int": true
     }
 }
