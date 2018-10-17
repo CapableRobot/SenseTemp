@@ -7,6 +7,8 @@
             "Name 3",
             "Name 4"
         ],
+        "scale": 100,
+        "to_int": true
     },
     "wifi-station":{
         "name": "SSID_NAME",
@@ -14,8 +16,9 @@
     },
     "mqtt": {
         "ip":"MQTT_IP",
-        "sleep": 1,
-        "scale": 100,
-        "to_int": true
+        "sleep": 1
+    },
+    "http": {
+        "sleep": 0.5
     }
 }

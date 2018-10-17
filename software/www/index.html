@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feather-RTD Wing</title>
+  <script src="/chart.min.js"></script>
+</head>
+<body>
+  <div style="width:100%">
+    <div>
+        <canvas id="canvas" height="375" width="800"></canvas>
+    </div>
+  </div>
+
+  <script>
+
+    function read_json_callback(url, callback) {
+      var request = new XMLHttpRequest();
+
+      request.onreadystatechange = function () {
+          if (request.readyState == 4 && request.status == 200) {
+              callback(JSON.parse(request.responseText));
+          }
+      };
+
+      request.open("GET", url, true);
+      request.send();
+    }
+
+    var ctx = document.getElementById("canvas").getContext("2d");
+
+    var chart_data = {
+      labels: [], // x-axis label
+      datasets: [
+        {
+          label: "",
+          fill: false,
+          backgroundColor: '#ff6384',
+          borderColor:     '#ff6384',
+          data: []
+        }, {
+          label: "",
+          fill: false,
+          backgroundColor: '#36a2eb',
+          borderColor:     '#36a2eb',
+          data: []
+        }, {
+          label: "",
+          fill: false,
+          backgroundColor: '#cc65fe',
+          borderColor:     '#cc65fe',
+          data: []
+        }, {
+          label: "",
+          fill: false,
+          backgroundColor: '#ffce56',
+          borderColor:     '#ffce56',
+          data: []
+        }
+      ]
+    };
+
+    var options = {
+        responsive: true,
+        scaleShowGridLines: true,
+        scales: {
+          xAxes: [{type: 'time', unit: 'second', time: {displayFormats: {second: 'mm:ss'}}}]
+        }
+    };
+    // scaleLineColor: "rgba(0,0,0,.1)",
+
+    var line_chart = new Chart(ctx, {
+      type:   'line',
+      data:    chart_data,
+      options: options
+    });
+
+    function update_func() {
+      read_json_callback("http://192.168.4.1/data.json", function(data) {
+        for (let entry of data) {
+          if (entry['id'] != 'agg') {
+            console.log(entry);
+            var dataset = chart_data.datasets[entry['id']-1];
+
+            if (dataset.label == "") {
+              dataset.label = entry['name'];
+            }
+
+            // TODO : retrieve scale from JSON structure
+            dataset.data.push(entry['value'] / 100.0);
+
+            if (dataset.data.length > 60) {
+              dataset.data.shift();
+            }
+
+            if (entry['id'] == 1) {
+              chart_data.labels.push(new Date());
+
+              if (chart_data.labels.length > 60) {
+                chart_data.labels.shift();
+              }
+            }
+
+          }
+        }
+
+        line_chart.update();
+      });
+    }
+
+    var timer = setInterval(update_func, 1000);
+  </script>
+</body>
+</html>
