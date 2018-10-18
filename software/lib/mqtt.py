@@ -1,3 +1,10 @@
+##
+## File copied from the micropython-lib repository
+## https://github.com/micropython/micropython-lib/blob/master/umqtt.simple/umqtt/simple.py
+##
+## The micropython-lib repository is licensed under the MIT License.
+##
+
 import usocket as socket
 import ustruct as struct
 from ubinascii import hexlify
