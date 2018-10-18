@@ -6090,7 +6090,7 @@ Use high quality 1% or better resistors</text>
 <attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="231.14" y="1.27" size="2.54" layer="94"/>
 <attribute name="TITLE" x="148.59" y="17.145" size="2.54" layer="94"/>
-<attribute name="REV" x="204.47" y="17.145" size="2.54" layer="94"/>
+<attribute name="REV" x="201.93" y="17.145" size="2.54" layer="94"/>
 <attribute name="URL" x="148.59" y="6.985" size="2.54" layer="94"/>
 <attribute name="LICENSE" x="219.71" y="17.145" size="2.54" layer="94"/>
 </instance>
@@ -6537,7 +6537,7 @@ Use high quality 1% or better resistors</text>
 <attribute name="LAST_DATE_TIME" x="160.02" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="231.14" y="1.27" size="2.54" layer="94"/>
 <attribute name="TITLE" x="148.59" y="17.145" size="2.54" layer="94"/>
-<attribute name="REV" x="204.47" y="17.145" size="2.54" layer="94"/>
+<attribute name="REV" x="201.93" y="17.145" size="2.54" layer="94"/>
 <attribute name="URL" x="148.59" y="6.985" size="2.54" layer="94"/>
 <attribute name="LICENSE" x="219.71" y="17.145" size="2.54" layer="94"/>
 </instance>
