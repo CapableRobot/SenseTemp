@@ -1,0 +1,657 @@
+{
+  "parts": [
+    {
+      "name": "C1",
+      "value": "10uF",
+      "device": "CAP_CERAMIC-_1206",
+      "description": "",
+      "package": "CAP-1206",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        9.144,
+        12.0142
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
+    },
+    {
+      "name": "C2",
+      "value": "10uF",
+      "device": "CAP_CERAMIC-_1206",
+      "description": "",
+      "package": "CAP-1206",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        9.144,
+        5.0038
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_1206_3216Metric.wrl"
+    },
+    {
+      "name": "C3",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        16.51,
+        5.08
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C4",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "bottom",
+      "rotation": 180,
+      "position": [
+        21.082,
+        5.207
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C5",
+      "value": "10nF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        17.78,
+        13.97
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C6",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        25.908,
+        5.08
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C7",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "bottom",
+      "rotation": 0,
+      "position": [
+        26.035,
+        5.207
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C8",
+      "value": "10nF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        26.67,
+        13.97
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C9",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        35.814,
+        5.08
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C10",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "bottom",
+      "rotation": 180,
+      "position": [
+        40.259,
+        5.207
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C11",
+      "value": "10nF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        36.449,
+        14.224
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C12",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        44.958,
+        5.08
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C13",
+      "value": "0.1uF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "bottom",
+      "rotation": 0,
+      "position": [
+        44.831,
+        5.207
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "C14",
+      "value": "10nF",
+      "device": "CAP_CERAMIC-0805-NOOUTLINE",
+      "description": "",
+      "package": "CAP-0805",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        45.593,
+        13.843
+      ],
+      "vrml": "Capacitor_SMD.3dshapes/C_0805_2012Metric.wrl"
+    },
+    {
+      "name": "FB1",
+      "device": "FERRITE--0805NO",
+      "description": "",
+      "package": "FER-0805",
+      "side": "bottom",
+      "rotation": 180,
+      "position": [
+        21.082,
+        6.985
+      ],
+      "vrml": "Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+    },
+    {
+      "name": "FB2",
+      "device": "FERRITE--0805NO",
+      "description": "",
+      "package": "FER-0805",
+      "side": "bottom",
+      "rotation": 0,
+      "position": [
+        26.035,
+        6.985
+      ],
+      "vrml": "Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+    },
+    {
+      "name": "FB3",
+      "device": "FERRITE--0805NO",
+      "description": "",
+      "package": "FER-0805",
+      "side": "bottom",
+      "rotation": 180,
+      "position": [
+        40.259,
+        6.985
+      ],
+      "vrml": "Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+    },
+    {
+      "name": "FB4",
+      "device": "FERRITE--0805NO",
+      "description": "",
+      "package": "FER-0805",
+      "side": "bottom",
+      "rotation": 0,
+      "position": [
+        44.831,
+        6.985
+      ],
+      "vrml": "Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+    },
+    {
+      "name": "J1",
+      "device": "CONN_12-NO_SILK",
+      "description": "",
+      "package": "1X12_NO_SILK",
+      "side": "top",
+      "rotation": 0,
+      "position": [
+        16.51,
+        21.59
+      ],
+      "vrml": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl"
+    },
+    {
+      "name": "J2",
+      "device": "CONN_16-1X16_NO_SILK",
+      "description": "",
+      "package": "1X16_NO_SILK",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        44.45,
+        1.27
+      ],
+      "vrml": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl"
+    },
+    {
+      "name": "Q1",
+      "value": "600mA/40V",
+      "prod_id": "TRANS-08049",
+      "device": "TRANS_NPN--MMBT2222AL",
+      "description": "",
+      "package": "SOT23-3",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        4.445,
+        9.779
+      ],
+      "vrml": "Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+    },
+    {
+      "name": "R1",
+      "value": "1k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        4.445,
+        13.208
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R2",
+      "value": "10k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        6.858,
+        9.017
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R3",
+      "value": "2k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        18.415,
+        16.637
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R4",
+      "value": "10k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        12.192,
+        8.128
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R5",
+      "value": "4300Ω 0.1%",
+      "device": "RESISTOR-0805_NOOUTLINE",
+      "description": "",
+      "package": "RES-0805",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        20.574,
+        8.636
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    },
+    {
+      "name": "R6",
+      "value": "10k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 0,
+      "position": [
+        32.766,
+        13.716
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R7",
+      "value": "4300Ω 0.1%",
+      "device": "RESISTOR-0805_NOOUTLINE",
+      "description": "",
+      "package": "RES-0805",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        30.099,
+        6.858
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    },
+    {
+      "name": "R8",
+      "value": "10k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 0,
+      "position": [
+        32.766,
+        11.938
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R9",
+      "value": "4300Ω 0.1%",
+      "device": "RESISTOR-0805_NOOUTLINE",
+      "description": "",
+      "package": "RES-0805",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        40.005,
+        6.858
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    },
+    {
+      "name": "R10",
+      "value": "10k",
+      "device": "RES-0603",
+      "description": "",
+      "package": "RES-0603",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        39.624,
+        15.494
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+    },
+    {
+      "name": "R11",
+      "value": "4300Ω 0.1%",
+      "device": "RESISTOR-0805_NOOUTLINE",
+      "description": "",
+      "package": "RES-0805",
+      "side": "top",
+      "rotation": 270,
+      "position": [
+        49.022,
+        7.62
+      ],
+      "vrml": "Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    },
+    {
+      "name": "RTD1",
+      "device": "CONN-16-ZT",
+      "description": "",
+      "package": "CONN-2X8-050-SMT-ZT",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        57.15,
+        11.43
+      ],
+      "vrml": "Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x08_P1.27mm_Vertical_SMD.wrl"
+    },
+    {
+      "name": "U1",
+      "value": "MIC5225-3.3",
+      "device": "VREG_SOT23-5",
+      "description": "",
+      "package": "SOT23-5",
+      "side": "top",
+      "rotation": 180,
+      "position": [
+        9.144,
+        8.509
+      ],
+      "vrml": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl"
+    },
+    {
+      "name": "U2",
+      "device": "AT21CS01",
+      "description": "",
+      "package": "SOT23-3",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        22.987,
+        18.034
+      ],
+      "vrml": "Package_TO_SOT_SMD.3dshapes/SOT-23.wrl"
+    },
+    {
+      "name": "U3",
+      "value": "MAX31865",
+      "device": "TEMP_MAX31865",
+      "description": "",
+      "package": "QFN20_4MM_0.65MM",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        16.764,
+        9.144
+      ],
+      "vrml": "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl"
+    },
+    {
+      "name": "U4",
+      "value": "MAX31865",
+      "device": "TEMP_MAX31865",
+      "description": "",
+      "package": "QFN20_4MM_0.65MM",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        26.162,
+        9.144
+      ],
+      "vrml": "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl"
+    },
+    {
+      "name": "U5",
+      "value": "MAX31865",
+      "device": "TEMP_MAX31865",
+      "description": "",
+      "package": "QFN20_4MM_0.65MM",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        36.068,
+        9.144
+      ],
+      "vrml": "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl"
+    },
+    {
+      "name": "U6",
+      "value": "MAX31865",
+      "device": "TEMP_MAX31865",
+      "description": "",
+      "package": "QFN20_4MM_0.65MM",
+      "side": "top",
+      "rotation": 90,
+      "position": [
+        45.212,
+        9.144
+      ],
+      "vrml": "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl"
+    }
+  ],
+  "geometry": [
+    {
+      "x1": 2.54,
+      "y1": 0.0,
+      "x2": 58.42,
+      "y2": 0.0,
+      "type": "wire"
+    },
+    {
+      "x1": 58.42,
+      "y1": 0.0,
+      "x2": 60.96,
+      "y2": 2.54,
+      "type": "wire",
+      "sag": 1.0
+    },
+    {
+      "x1": 60.96,
+      "y1": 2.54,
+      "x2": 60.96,
+      "y2": 20.32,
+      "type": "wire"
+    },
+    {
+      "x1": 60.96,
+      "y1": 20.32,
+      "x2": 58.42,
+      "y2": 22.86,
+      "type": "wire",
+      "sag": 1.0
+    },
+    {
+      "x1": 58.42,
+      "y1": 22.86,
+      "x2": 2.54,
+      "y2": 22.86,
+      "type": "wire"
+    },
+    {
+      "x1": 2.54,
+      "y1": 22.86,
+      "x2": 0.0,
+      "y2": 20.32,
+      "type": "wire",
+      "sag": 1.0
+    },
+    {
+      "x1": 0.0,
+      "y1": 20.32,
+      "x2": 0.0,
+      "y2": 2.54,
+      "type": "wire"
+    },
+    {
+      "x1": 0.0,
+      "y1": 2.54,
+      "x2": 2.54,
+      "y2": 0.0,
+      "type": "wire",
+      "sag": 1.0
+    },
+    {
+      "x": 48.26,
+      "y": 2.54,
+      "drill": 2.54,
+      "type": "hole"
+    },
+    {
+      "x": 48.26,
+      "y": 20.32,
+      "drill": 2.54,
+      "type": "hole"
+    },
+    {
+      "x": 2.54,
+      "y": 20.32,
+      "drill": 2.54,
+      "diameter": 4.445,
+      "type": "hole"
+    },
+    {
+      "x": 2.54,
+      "y": 2.54,
+      "drill": 2.54,
+      "diameter": 4.445,
+      "type": "hole"
+    }
+  ],
+  "offsets": {
+    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl": {
+      "uri": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x12_P2.54mm_Vertical.wrl",
+      "rotation": 90
+    },
+    "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl": {
+      "uri": "Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.wrl",
+      "rotation": 90
+    },
+    "Package_TO_SOT_SMD.3dshapes/SOT-23.wrl": {
+      "uri": "Package_TO_SOT_SMD.3dshapes/SOT-23.wrl",
+      "rotation": 90
+    },
+    "Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x08_P1.27mm_Vertical_SMD.wrl": {
+      "uri": "Connector_PinHeader_1.27mm.3dshapes/PinHeader_2x08_P1.27mm_Vertical_SMD.wrl",
+      "rotation": 90
+    },
+    "Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl": {
+      "uri": "Package_TO_SOT_SMD.3dshapes/SOT-23-5.wrl",
+      "rotation": 90
+    },
+    "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl": {
+      "uri": "Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.wrl",
+      "rotation": 90
+    }
+  }
+}
