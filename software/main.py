@@ -46,11 +46,33 @@ def stddev(data, ddof=0):
     pvar = ss/(len(data)-ddof)
     return pvar**0.5
 
-def mqtt_thread():
+def poll_sensors(extra_info=False):
+    meta    = []
+    samples = []
+
+    for idx, sensor in sensors:
+        value = sensor.temperature*settings['device']['scale']
+
+        if settings['device']['to_int']:
+            value = int(value)
+
+        data = {'id':idx, 'value':value}
+
+        if extra_info:
+            data['name'] = sensor_info[idx-1]['name']
+
+        meta.append(data)
+        samples.append(value)
+
+    meta.append({'id':'agg','mean':mean(samples),'stddev':stddev(samples)})
+    return meta
+
+
+def mqtt_loop():
     ## Create MQTT Connection
     c = mqtt.MQTTClient(settings['device']['name'], settings['mqtt']['ip'], 1883)
     c.connect()
-    c.publish(settings['device']['name']+'/', json.dumps(sensor_info))
+    c.publish(settings['device']['name'], json.dumps(sensor_info))
 
     while True:
         check_wifi(nic)
@@ -108,12 +130,13 @@ for name in settings['device']['sensors']:
 
 
 
-## Setup WIFI Networking
+## Setup WIFI Networking as a client
 if 'wifi-station' in settings:
     nic = network.WLAN(network.STA_IF)
     nic.active(True)
     check_wifi(nic)
 
+## Setup WIFI Networking as an access point
 if 'wifi-ap' in settings:
     ap = network.WLAN(network.AP_IF)
     ap.active(True)
@@ -127,30 +150,10 @@ gc.threshold(gc.mem_free() // 4 + gc.mem_alloc())
 ## Become a MQTT client, if configured so
 if 'mqtt' in settings:
     import mqtt
-    start_new_thread(mqtt_thread, ())
+    # start_new_thread(mqtt_thread, ())
+    mqtt_loop()
 
 
-
-def poll_sensors(extra_info=False):
-    meta    = []
-    samples = []
-
-    for idx, sensor in sensors:
-        value = sensor.temperature*settings['device']['scale']
-
-        if settings['device']['to_int']:
-            value = int(value)
-
-        data = {'id':idx, 'value':value}
-
-        if extra_info:
-            data['name'] = sensor_info[idx-1]['name']
-
-        meta.append(data)
-        samples.append(value)
-
-    meta.append({'id':'agg','mean':mean(samples),'stddev':stddev(samples)})
-    return meta
 
 
 def _acceptWebSocketCallback(webSocket, httpClient) :
