@@ -1,54 +1,29 @@
 # SenseTemp
 
-Designed by [Capable Robot Components](http://capablerobot.com).  Follow us on [Twitter](http://twitter.com/capablerobot) for product announcements and updates.
+Designed by [Capable Robot Components](http://capablerobot.com).  
+Follow us on [Twitter](http://twitter.com/capablerobot) for product announcements and updates.
 
 ---
 
-This repository contains schematics, layout, and bill of materials for an [OSHW](https://www.oshwa.org/definition/) four channel RTD temperature sensor.  It is designed to mate with Adafruit Feather-compatible host modules, like their [ESP32 Feather Host](https://www.adafruit.com/product/3405).
+**SenseTemp is currently in-pre launch on CrowdSupply.  You can sign up on the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) for project update.** 
 
-## Installation
+This repository contains schematics, layout, and bill of materials for an [OSHW](https://www.oshwa.org/definition/) four channel RTD temperature sensor.  It is designed to mate with Adafruit Feather-compatible host modules, like:
 
-1. Install tools
+* [Adafruit ESP32 Feather Host](https://www.adafruit.com/product/3405)
+* [Adafruit HalloWing](https://www.adafruit.com/product/3900)
 
-```
-pip3 install esptool adafruit-ampy
-```
+Note that the ES8266 Feather is **NOT** supported due to the limited IO on the ESP8266.  It does not have enough pins to support the four SPI devices of the SenseTemp.
 
-2. Flash MicroPython onto the device
+## Software
 
-```
-espefuse.py --port /dev/ttyUSB1 set_flash_voltage 3.3V
-esptool.py --chip esp32 erase_flash
-esptool.py --chip esp32 --port /dev/ttyUSB1 write_flash -z 0x1000 firmware/esp32-20180511-v1.9.4.bin
-```
+The software running on the Feather host processor does change based on the feather host you are using.  This repository contains software for:
 
-The first command is necessary if the SenseTemp PCB has been soldered to the ESP32 module, due to the PCB pulling up GPIO12 (the SIO pin).
+* [**CircuitPython:**](tree/master/software-circuitpython) if you are using a Cortex M4 or M0 Feather.  
+* [**MicroPython:**](tree/master/software-micropython) if you are using an ESP32 Feather.  The ESP32 is not currently supported by CircuitPython.
 
-By default, the ESP32 sees that as a signal to provide the flash chip with 1.8v instead of the default 3.3v.  This causes the SPI flash to brown out during writing and the MD5 checksum verify step will fail (because the flash is corrupted).  Setting the EFUSE causes the ESP32 to ignore the GPIO12 pin and always provide 3.3v to the SPI flash.
+## Hardware Revisions
 
-3. Load MicroPython source files
-
-```
-ampy put lib
-ampy put www
-ampy put settings.json
-ampy put main.py
-```
-
-
-## Development
-
-During development, it's best to load the main file under a different name so that the firmware does not automatically execute it.
-
-```
-ampy put main.py tmp.py
-screen /dev/ttyUSB1 115200
-> from tmp import *
-```
-
-## Revisions
-
-* [CREAES](tree/master/revisions/CREAES) : Release 2018-10-18.
+* [CREAES](tree/master/revisions/CREAES) : Last release 2018-10-18.
 	* Changed from 0805 to 0603 passive components.
 	* Moved all components to top side of PCB.
 	* Added `USR` pin for user-controllable LED near the RTD connector.
