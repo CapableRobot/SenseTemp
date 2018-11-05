@@ -1,4 +1,5 @@
 software/settings.json
+.DS_Store
 
 # Eagle Backup files
 *.s#?
