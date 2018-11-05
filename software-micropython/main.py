@@ -209,4 +209,3 @@ if 'http' in settings:
 
     ## Sometimes works
     # start_new_thread(mws._serverProcess, ())
-
