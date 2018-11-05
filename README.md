@@ -18,21 +18,23 @@ Note that the ES8266 Feather is **NOT** supported due to the limited IO on the E
 
 The software running on the Feather host processor does change based on the feather host you are using.  This repository contains software for:
 
-* [**CircuitPython:**](tree/master/software-circuitpython) if you are using a Cortex M4 or M0 Feather.  
-* [**MicroPython:**](tree/master/software-micropython) if you are using an ESP32 Feather.  The ESP32 is not currently supported by CircuitPython.
+* [**CircuitPython:**](software-circuitpython) if you are using a Cortex M4 or M0 Feather.  
+* [**MicroPython:**](software-micropython) if you are using an ESP32 Feather.  The ESP32 is not currently supported by CircuitPython.
+
+tree/master/software-micropython
 
 ## Hardware Revisions
 
-* [CREAES](tree/master/revisions/CREAES) : Last release 2018-10-18.
+* [CREAES](revisions/CREAES) : Last release 2018-10-18.
 	* Changed from 0805 to 0603 passive components.
 	* Moved all components to top side of PCB.
 	* Added `USR` pin for user-controllable LED near the RTD connector.
 	* Changed license from **CC BY-SA 4.0** to **CERN OHL v1.2**.
-* [X9EG](tree/master/revisions/X9EG) : Released 2018-08-28.
+* [X9EG](revisions/X9EG) : Released 2018-08-28.
 	* Added `SIO` pin with AT21CS01 1-Wire EEPROM for configuration & serialization.
 	* Added `EN` pin to allow host PCB to disable 5v to 3v regulator on this PCB.
 	* Changed RTD connector from 20 pin (used on XTMT version) to 16 pin.
-* [XTMT](tree/master/revisions/XTMT) : Initial version released 2018-05-18.
+* [XTMT](revisions/XTMT) : Initial version released 2018-05-18.
 
 ## License Information
 
