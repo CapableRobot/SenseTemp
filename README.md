@@ -7,7 +7,41 @@ Follow us on [Twitter](http://twitter.com/capablerobot) for product announcement
 
 **SenseTemp is currently in-pre launch on CrowdSupply.  You can sign up on the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) for project update.** 
 
-This repository contains schematics, layout, and bill of materials for an [OSHW](https://www.oshwa.org/definition/) four channel RTD temperature sensor.  It is designed to mate with Adafruit Feather-compatible host modules, like:
+![SenseTemp PCB Image](images/sensetemp_pcbs.jpg?raw=true)
+
+SenseTemp provides four highly accurate and flexible temperature sensors which allow you to understand the operation of your:
+
+* Mobile robot
+* Embedded system 
+* Double pane windows on your house
+* Home brewing operation
+* Or any other system where temperature and thermal conduction is important
+
+It's designed for quick tests as well as long-duration process monitoring.
+
+## SenseTemp Features 
+
+* **Small:** so that it can be on a mobile system being tested.  The RTDs themselves are 2 mm x 4 mm, making them thermally responsive and great for measurement of point heat sources
+* **Inexpensive:** allowing many points of temperature monitoring
+* **Battery Powered:** including LiPoly & USB power banks
+* **Wireless:** to make test setup faster and more flexible
+* **Open Software:** so that the device can directly feed data into a data logging system of your choice
+* **Open Hardware:** to enable derivative designs and for easy hacking
+
+## Specifications
+
+|Feature|Specification|
+|----|----|
+|Sensors|4x Platinum resistance temperature detectors (RTDs)|
+|RTD Accuracy|±0.15°C|
+|Temperature Range|-50°C to 260°C|
+|Interface ICs|4x [MAX31865](https://www.maximintegrated.com/en/products/sensors/MAX31865.html) with 4 wire sensing|
+|Form Factor|[Adafruit Feather](https://www.adafruit.com/feather)|
+|Dimensions|0.9" x 2.4"|
+
+## Feather Hosts
+
+SenseTemp is designed to mate with Adafruit Feather-compatible host modules, like:
 
 * [Adafruit ESP32 Feather Host](https://www.adafruit.com/product/3405)
 * [Adafruit HalloWing](https://www.adafruit.com/product/3900)
@@ -20,8 +54,6 @@ The software running on the Feather host processor does change based on the feat
 
 * [**CircuitPython:**](software-circuitpython) if you are using a Cortex M4 or M0 Feather.  
 * [**MicroPython:**](software-micropython) if you are using an ESP32 Feather.  The ESP32 is not currently supported by CircuitPython.
-
-tree/master/software-micropython
 
 ## Hardware Revisions
 
@@ -50,4 +82,3 @@ More detailed information about the CERN License is available in the [license](l
 | **OSHW Certification** |
 | --- |
 | Coming Soon |
-
