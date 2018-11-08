@@ -62,6 +62,7 @@ The software running on the Feather host processor does change based on the feat
 	* Moved all components to top side of PCB.
 	* Added `USR` pin for user-controllable LED near the RTD connector.
 	* Changed license from **CC BY-SA 4.0** to **CERN OHL v1.2**.
+	* **IN PROGRESS** : Can be powered from either USB or Li-Ion sources.
 * [X9EG](revisions/X9EG) : Released 2018-08-28.
 	* Added `SIO` pin with AT21CS01 1-Wire EEPROM for configuration & serialization.
 	* Added `EN` pin to allow host PCB to disable 5v to 3v regulator on this PCB.
