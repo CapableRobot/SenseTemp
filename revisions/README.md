@@ -1,6 +1,15 @@
 # SenseTemp Hardware Revisions
 
+Designed by [Capable Robot Components](http://capablerobot.com).  
+Follow us on [Twitter](http://twitter.com/capablerobot) for product announcements and updates.
+
+---
+
+**SenseTemp is currently in-pre launch on CrowdSupply.  You can sign up on the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) for project update.** 
+
 ![SenseTemp PCB Image](../images/sensetemp_pcbs.jpg?raw=true)
+
+---
 
 * [CREAES](revisions/CREAES) : Last release 2018-10-18.
 	* Changed from 0805 to 0603 passive components.
