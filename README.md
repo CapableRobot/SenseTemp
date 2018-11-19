@@ -82,4 +82,5 @@ More detailed information about the CERN License is available in the [license](l
 
 | **OSHW Certification** |
 | --- |
-| Coming Soon |
+| ![OSHW Mark US000151](images/OSHW_mark_US000151.png?raw=true) | 
+| [Certified open source hardware](https://certification.oshwa.org/us000151.html) by the [Open Source Hardware Association](https://www.oshwa.org) |
