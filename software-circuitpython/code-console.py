@@ -15,6 +15,8 @@ import busio
 import board
 import time
 
+import neopixel
+
 ## Local Imports
 import adafruit_max31865 as max31865
 
@@ -31,6 +33,7 @@ cs4  = digitalio.DigitalInOut(board.D5)
 css  = [cs1, cs2, cs3, cs4]
 
 sensors = []
+pixel = False
 
 ## Create array for the RTD sensors on the SenseTemp Wing
 for cs in css:
@@ -47,6 +50,36 @@ for cs in css:
 
 boot_time = time.monotonic()
 
+if hasattr(board, 'NEOPIXEL'):
+    led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+    led.brightness = 0.3
+    pixel = True
+
+def wheel(pos):
+    # Input a value 0 to 255 to get a color value.
+    # The colours are a transition r - g - b - back to r.
+    if pos < 0:
+        return 0, 0, 0
+
+    if pos > 255:
+        return 255, 0, 0
+
+    if pos < 85:
+        return int(255 - pos * 3), int(pos * 3), 0
+
+    if pos < 170:
+        pos -= 85
+        return 0, int(255 - pos * 3), int(pos * 3)
+
+    pos -= 170
+    return int(pos * 3), 0, int(255 - (pos * 3))
+
+
 while True:
     data = [sensor.temperature for sensor in sensors]
     print(time.monotonic() - boot_time, data)
+
+    if pixel:
+        # Scale and reverse colors so that high temperatures (30C) -> red color
+        color = 255 - data[0]*7
+        led.fill(wheel(int(color)))
