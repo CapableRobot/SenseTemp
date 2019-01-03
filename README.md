@@ -43,6 +43,8 @@ It's designed for quick tests as well as long-duration process monitoring.
 
 SenseTemp is designed to mate with Adafruit Feather-compatible host modules, like:
 
+* [Adafruit Feather M4 Express](https://www.adafruit.com/product/3857)
+* [Adafruit Feather M0 Express](https://www.adafruit.com/product/3403)
 * [Adafruit ESP32 Feather Host](https://www.adafruit.com/product/3405)
 * [Adafruit HalloWing](https://www.adafruit.com/product/3900)
 
@@ -74,7 +76,7 @@ The software running on the Feather host processor does change based on the feat
 | **Type** | **License** |
 | --- | --- |
 | Hardware | Copyright Capable Robot Components 2018 <br><br>This documentation describes Open Hardware and is licensed under the [CERN OHL v1.2 or later](https://www.ohwr.org/licenses/cern-ohl/license_versions/v1.2). <br/><br/> You may redistribute and modify this documentation under the terms of the CERN OHL v.1.2.  This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN OHL v.1.2 for applicable conditions |
-| Software | [MIT License](tree/master/LICENSE.txt) |
+| Software | [MIT License](LICENSE.txt) |
 | Documentation | [Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/) License |
 
 More detailed information about the CERN License is available in the [license](license) folder and on the [CERN website](https://www.ohwr.org/projects/cernohl/wiki).
