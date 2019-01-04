@@ -1,11 +1,11 @@
 {
     "device": {
-        "name": "RTD-1",
+        "name": "SenseTemp",
         "sensors": [
-            "Name 1",
-            "Name 2",
-            "Name 3",
-            "Name 4"
+            "Channel 1",
+            "Channel 2",
+            "Channel 3",
+            "Channel 4"
         ],
         "scale": 100,
         "to_int": true
