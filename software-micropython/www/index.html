@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Feather-RTD Wing</title>
+  <title>Capable Robot SenseTemp</title>
   <script src="/chart.min.js"></script>
+  
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-title" content="SenseTemp">
 </head>
 <body>
   <div style="width:100%">
     <div>
-        <canvas id="canvas" height="375" width="800"></canvas>
+        <canvas id="canvas" height="440" width="800"></canvas>
     </div>
   </div>
 
@@ -33,27 +38,23 @@
       datasets: [
         {
           label: "",
-          fill: false,
-          backgroundColor: '#ff6384',
           borderColor:     '#ff6384',
+          backgroundColor: '#ff6384',
           data: []
         }, {
           label: "",
-          fill: false,
-          backgroundColor: '#36a2eb',
           borderColor:     '#36a2eb',
+          backgroundColor: '#36a2eb',
           data: []
         }, {
           label: "",
-          fill: false,
-          backgroundColor: '#cc65fe',
           borderColor:     '#cc65fe',
+          backgroundColor: '#cc65fe',
           data: []
         }, {
           label: "",
-          fill: false,
-          backgroundColor: '#ffce56',
           borderColor:     '#ffce56',
+          backgroundColor: '#ffce56',
           data: []
         }
       ]
@@ -63,7 +64,11 @@
         responsive: true,
         scaleShowGridLines: true,
         scales: {
-          xAxes: [{type: 'time', unit: 'second', time: {displayFormats: {second: 'mm:ss'}}}]
+          xAxes: [{type: 'time', unit: 'second', time: {displayFormats: {second: 'mm:ss'}}}],
+        },
+        elements: {
+          point: { radius: 0 }, 
+          line: { fill: false },
         }
     };
     // scaleLineColor: "rgba(0,0,0,.1)",
@@ -75,7 +80,7 @@
     });
 
     function update_func() {
-      read_json_callback("http://192.168.4.1/data.json", function(data) {
+      read_json_callback("/data.json", function(data) {
         for (let entry of data) {
           if (entry['id'] != 'agg') {
             console.log(entry);
@@ -107,7 +112,8 @@
       });
     }
 
-    var timer = setInterval(update_func, 1000);
+    // TODO : pull interval from JSON file
+    var timer = setInterval(update_func, 500);
   </script>
 </body>
 </html>
