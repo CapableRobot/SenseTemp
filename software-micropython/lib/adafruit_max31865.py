@@ -222,7 +222,13 @@ class MAX31865:
         temp = (math.sqrt(temp) + Z1) / Z4
         if temp >= 0:
             return temp
+
+        # Have to normalize to 100 ohms if temperure is less than 0C for the following math to work
+        raw_reading /= self.rtd_nominal
+        raw_reading *= 100
+
         rpoly = raw_reading
+
         temp = -242.02
         temp += 2.2228 * rpoly
         rpoly *= raw_reading  # square
