@@ -1,0 +1,24 @@
+{
+    "device": {
+        "name": "SenseTemp",
+        "sensors": [
+            "CH1",
+            "CH2",
+            "CH3",
+            "CH4"
+        ],
+        "scale": 1,
+        "to_int": false
+    },
+    "wifi-station":{
+        "name": "SSID_NAME",
+        "pass": "SSID_PASS"
+    },
+    "mqtt": {
+        "server":"io.adafruit.com",
+        "user":"USERNAME",
+        "key":"AIO_KEY",
+        "feed":"SenseTemp",
+        "sleep": 3
+    }
+}
