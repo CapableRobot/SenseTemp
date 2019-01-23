@@ -6,7 +6,7 @@ Designed by [Capable Robot Components](http://capablerobot.com).  Follow us on [
 
 This folder contains MicroPython software for use of the SenseTemp with the [Adafruit ESP32 Feather Host](https://www.adafruit.com/product/3405).
 
-## Installation
+## System Setup
 
 1. Install tools
 
@@ -28,9 +28,33 @@ On MacOS, the port name will likely be `/dev/tty.SLAB_USBtoUART`.
 
 By default, the ESP32 sees that as a signal to provide the flash chip with 1.8v instead of the default 3.3v.  This causes the SPI flash to brown out during writing and the MD5 checksum verify step will fail (because the flash is corrupted).  Setting the EFUSE causes the ESP32 to ignore the GPIO12 pin and always provide 3.3v to the SPI flash.
 
-3. Load MicroPython source files.  Due the size of the www folder, this will take a while.  Be patient.
+3. Load MicroPython source files (see below)
+
+
+### Console Demo
 
 ```
+ampy put lib
+ampy put main-console.py main.py
+```
+
+### MQTT Demo
+
+After creating the JSON file, you'll need to edit it to have your correct WIFI and Adafruit.io information.
+
+```
+cp settings-mqtt.json.example settings-mqtt.json 
+ampy put lib
+ampy put settings-mqtt.json 
+ampy put main-mqtt.py main.py
+```
+
+### WIFI Demo
+
+After creating the JSON file, you'll need to edit it to have your correct WIFI information.  Due the size of the `www` folder, this will take a few minutes.  Be patient.  
+
+```
+cp settings.json.example settings.json 
 ampy put lib
 ampy put www
 ampy put settings.json

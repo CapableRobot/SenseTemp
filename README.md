@@ -5,7 +5,7 @@ Follow us on [Twitter](http://twitter.com/capablerobot) for product announcement
 
 ---
 
-**SenseTemp is currently in-pre launch on CrowdSupply.  You can sign up on the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) for project update.** 
+**SenseTemp is available on CrowdSupply.  Please visit the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) for product information and to purchase SenseTemp.** 
 
 ![SenseTemp PCB Image](images/sensetemp_pcbs.jpg?raw=true)
 
