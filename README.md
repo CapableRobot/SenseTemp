@@ -5,7 +5,7 @@ Follow us on [Twitter](http://twitter.com/capablerobot) for product announcement
 
 ---
 
-**SenseTemp is available on [CrowdSupply](https://www.crowdsupply.com/capable-robot-components/sensetemp) & [Mouser](https://www.mouser.com/ProductDetail/Crowd-Supply/cs-sensetemp-01?qs=sGAEpiMZZMsSgQ5oX0A7uhzs7btMGoRQjdDbb5Xc%2F1l7fRq91ffQkQ%3D%3D).  Please visit the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) or [Mouser](https://www.mouser.com/ProductDetail/Crowd-Supply/cs-sensetemp-01?qs=sGAEpiMZZMsSgQ5oX0A7uhzs7btMGoRQjdDbb5Xc%2F1l7fRq91ffQkQ%3D%3D) for product information and to purchase SenseTemp.** 
+**SenseTemp is available on [CrowdSupply](https://www.crowdsupply.com/capable-robot-components/sensetemp) & [Mouser](https://www.mouser.com/Search/Refine?Keyword=sensetemp).  Please visit the [campaign page](https://www.crowdsupply.com/capable-robot-components/sensetemp) or [Mouser](https://www.mouser.com/ProductDetail/Crowd-Supply/cs-sensetemp-01?qs=sGAEpiMZZMsSgQ5oX0A7uhzs7btMGoRQjdDbb5Xc%2F1l7fRq91ffQkQ%3D%3D) for product information and to purchase SenseTemp.** 
 
 ![SenseTemp PCB Image](images/sensetemp_pcbs.jpg?raw=true)
 
