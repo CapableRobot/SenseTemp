@@ -21,3 +21,19 @@ Follow us on [Twitter](http://twitter.com/capablerobot) for product announcement
 	* Added `EN` pin to allow host PCB to disable 5v to 3v regulator on this PCB.
 	* Changed RTD connector from 20 pin (used on XTMT version) to 16 pin.
 * [XTMT](revisions/XTMT) : Initial version released 2018-05-18.
+
+---
+
+Also in this folder are two adapter PCBs which allows SenseTemp's 50mil (4x 4-wire) connector to be adapted to 4x 2-way 5mm screw terminals, allowing SenseTemp to use 2-wire and 3-wire (in 2-wire mode) P1000 RTDs.
+
+The 'stacking' design has the same outline and mounting as SenseTemp and is designed to stack vertically above SenseTemp using a [AMP Minitek 20021321-00016C4LF](https://octopart.com/20021321-00016c4lf-amphenol+icc+%2F+fci-12642443?r=sp) (or similar) connector.
+
+The 'cabled' design is smaller and cabled to SenseTemp via a 16 conductor, 50 mil ribbon cabled.  The recommended 16 pin connector for it is [CNC Tech 3221-16-0300-00](https://octopart.com/3221-16-0300-00-cnc+tech-47114357?r=sp) or similar.
+
+Bare PCBs (e.g. no components installed or included) are available for purchase directly from OSHPark:
+
+| [Cabled Adapter](https://oshpark.com/shared_projects/WjlpBAlQ) | [Stacking Adapter](https://oshpark.com/shared_projects/11pGTiwa) |
+|---|---|
+|[![Cabled Adapter Image](../images/cabled_adapter.png?raw=true)](https://oshpark.com/shared_projects/WjlpBAlQ)| [![Stacking Adapter Image](../images/stacking_adapter.png?raw=true)](https://oshpark.com/shared_projects/11pGTiwa) |
+
+---
